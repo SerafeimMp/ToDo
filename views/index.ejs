@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="links2">
+        <a class="links" href="http://localhost:3000/work">Work</a>
+        <a class="links" href="http://localhost:3000">Today</a>
+    </div>
+    
+    
+    <div class="header" >
+            <h2 class="title"><%= cal %></h2>
+    </div>
+   
+    <div class="header">
+        <div class="check">
+            <%for (let i = 0; i < items.length; i++) {%>
+                <div class="new">
+                    <input type="checkbox" id="todo" name="todo" class="checkbox" >
+                    <p>
+                         <label for="todo" class="label"> <%= items[i] %></label><br>
+                    </p>
+                    
+                </div>
+                <hr class="hr">
+               
+            <% } %>
+           </div>
+           
+    </div>
+    <div class="new2">
+    <form action="/" method="POST" class="check">
+        <div class="form">
+            <input class="input" type="text" name="fName" placeholder="New Item" >
+            <input type="submit" value="+" class="logo">
+        </div>
+        
+    </form>
+    </div>
+    
+    <div class="dfooter" >
+        <footer class="footer"> &#169;Serafeim Mparkas
+        </footer>
+    </div>
+    
+</body>
+</html>
